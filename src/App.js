@@ -6,40 +6,43 @@ import Creative from './components/Creative';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import JoshySoul from './components/JoshySoul';
-import InvalidPage  from './components/Invalid404';
+import InvalidPage from './components/Invalid404';
 import Thomko from './components/Thomko';
 import Joshyfigure from './components/Joshyfigure.jsx';
 import Yinyang from './components/Yinyang.jsx';
+import Yinyang2 from './components/Yinyang2';
 
 function App() {
 
-return (
-  <div className="App">
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path='/'
-          element={<Image />} />
-           <Route path='/yin'
-          element={<Yinyang />} />
-        <Route path='/roster'
-          element={<Roster />} />
-        <Route path='/creative'
-          element={<Creative />} />
+  return (
+    <div className="App">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path='/'
+            element={<Image />} />
+          <Route path='/yin'
+            element={<Yinyang />} />
+          <Route path='/yin2'
+            element={<Yinyang2 />} />
+          <Route path='/roster'
+            element={<Roster />} />
+          <Route path='/creative'
+            element={<Creative />} />
           <Route path='/about'
-          element={<About />} />
+            element={<About />} />
           <Route path='/joshysoul'
-          element={<JoshySoul />} />
-            <Route path='/thomko'
-          element={<Thomko />} />
+            element={<JoshySoul />} />
+          <Route path='/thomko'
+            element={<Thomko />} />
           <Route path='/joshyfigure'
-          element={<Joshyfigure />} />
+            element={<Joshyfigure />} />
           <Route path='*'
-          element={<InvalidPage />} />
-      </Routes>
-    </Router>
-  </div>
-);
+            element={<InvalidPage />} />
+        </Routes>
+      </Router>
+    </div>
+  );
 }
 
 export default App;

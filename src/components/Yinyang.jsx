@@ -30,14 +30,9 @@ const Yinyang = () => {
       <div className="container12">
         <div className="yin"></div>
         <div className="yang"></div>
-        
       </div>
     </div>
-    <div className="bottombox">
-        </div>
     </div>
-
-   
    
   )
 }

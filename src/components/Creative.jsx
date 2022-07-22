@@ -13,6 +13,7 @@ const Creative = () => {
       <div className="rosterTitle fade-in-text">
         <h3>CREATIVE</h3>
         <div className="rosterNames fade-in-text">
+          {/* create links of every ul  */}
           <ul>
             <li className='menu-bars'> M3F 
             </li>

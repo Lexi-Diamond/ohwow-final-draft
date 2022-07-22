@@ -1,0 +1,45 @@
+.yinyangbody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background: url(../assets/img/blackandwhitebg.png.png) no-repeat center center fixed;
+}
+.yinyangdiv {
+  display: flex;
+  align-items: center;
+  height: 100vmin;
+  width: 100vmin;
+  border-radius: 50%;
+  background: linear-gyradient(black 50%, white 0);
+  animation: spin 2s linear infinite;
+}
+.yinyangdiv:before, .yinyangdiv:after {
+  --i: 0;
+  flex: 1;
+  border: solid 10vmin #000;
+  background: #000;
+  border-radius: 50%;
+  height: 10vmin;
+  transform-origin: calc(var(--i)*100%) 50%;
+  transform: scale(0.5);
+  animation: s 1s ease-in-out calc(var(--i)*-1s) infinite alternate;
+  content: '';
+}
+.yinyangdiv:after {
+  --i: 1;
+}
+@keyframes s {
+  to {
+    transform: scale(1.5);
+ }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+ }
+  to {
+    transform: rotate(360deg);
+ }
+}
